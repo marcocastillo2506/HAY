@@ -1,0 +1,33 @@
+{
+  "name": "hay",
+  "version": "1.0.0",
+  "description": "This is a yearbook for CoHort1",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "jquery": "*",
+    "mysql": "*",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-loader": "*",
+    "webpack": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamNumber7/HAY.git"
+  },
+  "author": "Jaqueline, Ricardo, Bruno, Javier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeamNumber7/HAY/issues"
+  },
+  "homepage": "https://github.com/TeamNumber7/HAY#readme"
+}
