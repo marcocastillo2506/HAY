@@ -6,10 +6,12 @@
   "dependencies": {
     "body-parser": "*",
     "express": "*",
+    "history": "^4.7.2",
     "jquery": "*",
     "mysql": "*",
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "react-router": "^4.2.0"
   },
   "devDependencies": {
     "babel-core": "*",
