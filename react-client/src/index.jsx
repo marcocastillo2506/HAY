@@ -1,25 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
+import { BrowserRouter, Route, hashHistory } from 'react-router-dom';
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
+import Home from './pages/Home.jsx';
+import Cohort from './pages/Cohort.jsx';
+import Student from './pages/Student.jsx';
 
-    }
-  }
-  render() {
-    return(
-      <div>
-        <h1>Render Basic View</h1>
-          <h2 href=''>GET TO KNOW OUR COHORT</h2>
-      </div>
-    )
-  }
-}
+const app = document.getElementById('app');
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(
+  <BrowserRouter history={hashHistory}>
+    <Route path="/" component={Home}>
+      <Route path="cohort" name="cohort1" component={Cohort}></Route>
+      <Route path="Student(/:name)" name="Student" component={Student}></Route>
+    </Route>
+  </BrowserRouter>,
+app);
 
 
 
