@@ -1,15 +1,13 @@
 var db = require('../database/index.js');
 
-const renderHome = function(req, res) {
+exports.renderHome = function(req, res) {
 
 }
 
-const renderCohort = function(req, res) {
+exports.renderCohort = function(req, res) {
 
 }
 
-const renderStudent= function(req, res) {
+exports.renderStudent= function(req, res) {
 
 }
-
-module.exports = routes;
