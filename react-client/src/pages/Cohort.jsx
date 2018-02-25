@@ -6,7 +6,7 @@ import MentorList from "../components/cohort/MentorList.jsx";
 import StudentList from "../components/cohort/StudentList.jsx";
 import ImageCollections from "../components/cohort/ImageCollections.jsx";
 
-export default class Cohort extends React.Component {
+class Cohort extends React.Component {
   render(){
     return(
       <div>
@@ -21,3 +21,4 @@ export default class Cohort extends React.Component {
     )
   }
 }
+export default CoHort;

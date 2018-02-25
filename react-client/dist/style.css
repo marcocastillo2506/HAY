@@ -1,1 +1,26 @@
+.header {
+  overflow: hidden;
+  background-color: blue;
+  padding: 20px 10px;
+}
+.header a:hover {
+  background-color: black;
+  color: black;
+}
+.header a {
+  border: 2px solid red;
+  border-radius: 15px;
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 2px;
+  text-decoration: none;
+  font-size: 50px;
+  line-height: 25px;
+  border-radius: 40px;
+}
+.header-right {
+  float: right;
+  color: black;
 
+}

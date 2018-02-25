@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default class Student extends React.Component {
+class Student extends React.Component {
   render(){
 
   }
 }
+
+export default Student;

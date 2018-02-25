@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import QuoteCollection from "../components/home/QuoteCollection.jsx";
 import HomeGallery from "../components/home/HomeGallery.jsx";
 
-export default class Home extends React.Component {
+class Home extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -34,7 +34,7 @@ export default class Home extends React.Component {
     return (
       <div>
         <div>
-          <h1 style="color:white;"> &lt;HOLACODE /&gt; YEARBOOK </h1>
+          <h1 style="color:#FEFEFE;">  &lt;HOLACODE /&gt; YEARBOOK </h1>
         </div>
         <QuoteCollection quotes={this.state.quotes}/>
         <div>
@@ -45,3 +45,5 @@ export default class Home extends React.Component {
     );
   }
 }
+
+export default Home;
