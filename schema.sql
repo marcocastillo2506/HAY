@@ -33,7 +33,7 @@ INSERT INTO quotes (id, quote, source) VALUES ("'Ceviche!!!!!!!!!!!!!'", "Marco"
 INSERT INTO quotes (id, quote, source) VALUES ("'Putting in more hours, it will never not help you'", "Javier");
 
 
-CREATE TABLE profiles (
+CREATE TABLE profiles ( 
   id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   first_name varchar(32) NOT NULL,
   last_name varchar(32) NOT NULL,
