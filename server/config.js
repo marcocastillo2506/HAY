@@ -12,6 +12,7 @@ app.use(express.static(__dirname + "/../server/public"));
 
 //GET request routes
 app.get("/", routes.renderQuotes);
+console.log('up to here, fine')
 app.get("/cohort", routes.renderCohort);
 
 //app.get('/student/:id', routes.renderStudent)
