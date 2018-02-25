@@ -34,7 +34,7 @@ export default class Home extends React.Component {
     return (
       <div>
         <div>
-          <h1> &lt;HOLACODE /&gt; YEARBOOK </h1>
+          <h1 style="color:white;"> &lt;HOLACODE /&gt; YEARBOOK </h1>
         </div>
         <QuoteCollection quotes={this.state.quotes}/>
         <div>
