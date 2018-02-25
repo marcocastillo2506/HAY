@@ -1,18 +1,19 @@
-var express = require("express");
-var bodyParser = require("body-parser");
-var routes = require("./routes");
+const express = require("express");
+const bodyParser = require("body-parser");
+const routes = require("./routes");
+const db = require('../database/index.js');
+const app = express();
 
-var app = express();
-
+//middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/../react-client/dist"));
 app.use(express.static(__dirname + "/../server/public"));
 
-app.get("/", (req, res) => {
-  res.send("Working");
-});
-//app.get('/cohort', (req, res) =>{
-//  res.send('cohort')
-//})
+//GET request routes
+app.get("/", routes.renderQuotes);
+app.get("/cohort", routes.renderCohort);
+
 //app.get('/student/:id', routes.renderStudent)
 
 module.exports = app;
