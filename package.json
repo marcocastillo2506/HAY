@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "body-parser": "*",
+    "bootstrap": "^4.0.0",
     "express": "*",
     "history": "^4.7.2",
     "jquery": "*",

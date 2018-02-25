@@ -5,15 +5,16 @@ CREATE DATABASE yearbook;
 USE yearbook;
 
 CREATE TABLE quotes (
-  id INT NOT NULL AUTO_INCREMENT,
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   source varchar(55),
-  quote TEXT
+  quote text
 );
 
 
 /*  Execute this file from the command line by typing:
  *    mysql -u root < schema.sql
  *  to create the database and the tables.*/
+
 
 INSERT INTO quotes (id, quote, source) VALUES ("'It became more than just learning code, when you work through the night with you peer beside you, that's when you realize you really are a family'", "Alex(smoky the bear)");
 INSERT INTO quotes (id, quote, source) VALUES ("'...doing what I love, hacking obstacles by coding a happy future... OneLove!'", "Edgar");
@@ -38,9 +39,9 @@ CREATE TABLE profiles (
   last_name varchar(32) NOT NULL,
   role varchar(32) NOT NULL,
   cohort int NOT NULL,
-  github_link varchar(64) NOT NULL,
-  linkedin_link varchar(64) NOT NULL,
-  picture_path varchar(64) NOT NULL,
+  github_link varchar(64),
+  linkedin_link varchar(64),
+  picture_path varchar(64),
   about_me text
 );
 
@@ -56,81 +57,55 @@ CREATE TABLE profiles (
  *    mysql -u root < schema.sql
 */
 
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Abimael", "Hernandez", "student", 1, "abimaelhernandez", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Alejandro", "Rodriguez", "student", 1, "AlejandroRodriguezP", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Armando", "Cano", "student", 1, "armandocano91", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Beatriz", "Garcia", "student", 1, "Beagbarreto", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Bruno", "Torres", "student", 1, "BrunoTorresF", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Cesar", "Tapia", "student", 1, "Cesar88Tapia", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Edgar", "Muñoz", "student", 1, "edgarmunoz1", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Eduardo", "Barranon", "student", 1, "Edward060290", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Eduardo", "Urrutia", "student", 1, "Eduardo091", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Heber", "Gutierrez", "student", 1, "HeberGutierrez", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Jaqueline", "Lopez", "student", 1, "Jacqueline930", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Javier", "Solis", "student", 1, "ElizaldeJE", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Jorge", "Cervantes", "student", 1, "JorgeC0218", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Jorge", "Lerma", "student", 1, "jorgelerma", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Joseph", "Fernandez", "student", 1, "JosephFernandez2689", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Juan", "Tejada", "student", 1, "Johntejeda", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Luis", "Avila", "student", 1, "Lalolalo85", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Luis Gerardo", "Nava", "student", 1, "luisgnava", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Luis", "Ortiz", "student", 1, "Luisortizlopez", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Marco", "Castillo", "student", 1, "marcocastillo2506", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Miriam", "Alvarez", "student", 1, "miriam30", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Ricardo", "Varona", "student", 1, "Varonss", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Scott", "Yoon", "mentor", 1, "scottyoon221", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Cornellius", "Ngondo", "mentor", 1, "cngondo", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Garima", "Batra", "mentor", 1, "gbatra17", );
-INSERT INTO profiles (first_name, last_name, role, cohort, github_link,
-picture_path, about_me)
-VALUES ("Jason", "Stieber", "mentor", 1, "theenderweggin", );
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Abimael", "Hernandez", "student", 1, "abimaelhernandez");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Alejandro", "Rodriguez", "student", 1, "AlejandroRodriguezP");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Armando", "Cano", "student", 1, "armandocano91");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Beatriz", "Garcia", "student", 1, "Beagbarreto");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Bruno", "Torres", "student", 1, "BrunoTorresF");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Cesar", "Tapia", "student", 1, "Cesar88Tapia");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Edgar", "Muñoz", "student", 1, "edgarmunoz1");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Eduardo", "Barranon", "student", 1, "Edward060290");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Eduardo", "Urrutia", "student", 1, "Eduardo091");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Heber", "Gutierrez", "student", 1, "HeberGutierrez");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Jaqueline", "Lopez", "student", 1, "Jacqueline930");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Javier", "Solis", "student", 1, "ElizaldeJE");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Jorge", "Cervantes", "student", 1, "JorgeC0218");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Jorge", "Lerma", "student", 1, "jorgelerma");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Joseph", "Fernandez", "student", 1, "JosephFernandez2689");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Juan", "Tejada", "student", 1, "Johntejeda");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Luis", "Avila", "student", 1, "Lalolalo85");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Luis Gerardo", "Nava", "student", 1, "luisgnava");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Luis", "Ortiz", "student", 1, "Luisortizlopez");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Marco", "Castillo", "student", 1, "marcocastillo2506");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Miriam", "Alvarez", "student", 1, "miriam30");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Ricardo", "Varona", "student", 1, "Varonss");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Scott", "Yoon", "mentor", 1, "scottyoon221");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Cornellius", "Ngondo", "mentor", 1, "cngondo");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Garima", "Batra", "mentor", 1, "gbatra17");
+INSERT INTO profiles (first_name, last_name, role, cohort, github_link)
+VALUES ("Jason", "Stieber", "mentor", 1, "theenderweggin");
