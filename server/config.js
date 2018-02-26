@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const routes = require("./routes");
+const route = require("./routes");
 const db = require('../database/index.js');
 const app = express();
 
@@ -11,9 +11,9 @@ app.use(express.static(__dirname + "/../react-client/dist"));
 app.use(express.static(__dirname + "/../server/public"));
 
 //GET request routes
-app.get("/", routes.renderQuotes);
-console.log('up to here, fine')
-app.get("/cohort", routes.renderCohort);
+app.get("/home", route.getQuotes)
+
+app.get("/cohort", route.getMentors, route.getStudents)
 
 //app.get('/student/:id', routes.renderStudent)
 

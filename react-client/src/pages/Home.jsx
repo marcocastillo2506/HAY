@@ -13,14 +13,15 @@ class Home extends React.Component {
     };
     this.getQuotes = this.getQuotes.bind(this);
   }
+
   componentDidMount(){
     this.getQuotes();
-    console.log(this.state.quotes)
   }
 
   getQuotes() {
-    $.get({
-      url: '/',
+    $.ajax({
+      type:'GET',
+      url: '/home',
       success: function(data) {
         this.setState({ quotes: data })
       }.bind(this),
@@ -34,7 +35,7 @@ class Home extends React.Component {
     return (
       <div>
         <div>
-          <h1 style="color:#FEFEFE;">  &lt;HOLACODE /&gt; YEARBOOK </h1>
+          <h1 style={{color: "#FEFEFE"}}> &lt;HOLACODE /&gt; YEARBOOK </h1>
         </div>
         <QuoteCollection quotes={this.state.quotes}/>
         <div>
