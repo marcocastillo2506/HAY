@@ -11,9 +11,19 @@ app.use(express.static(__dirname + "/../react-client/dist"));
 app.use(express.static(__dirname + "/../server/public"));
 
 //GET request routes
-app.get("/", routes.renderQuotes);
-console.log('up to here, fine')
-app.get("/cohort", routes.renderCohort);
+app.get("/home", (req, res, next) => {
+  db.getHomeQuotes(data => {
+    res.status(200).json(data);
+    });
+  }
+)
+
+app.get("/cohort", (req, res, next) => {
+  db.getAllMentors(data => {
+    res.status(200).json(data)
+    });
+  }
+)
 
 //app.get('/student/:id', routes.renderStudent)
 
