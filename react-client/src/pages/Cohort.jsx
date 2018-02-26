@@ -13,19 +13,34 @@ class Cohort extends React.Component {
       mentors: [],
       students: []
     };
-    this.getCohortProfiles = this.getCohortProfiles.bind(this);
+    this.getMentorProfiles = this.getMentorProfiles.bind(this);
+    this.getStudentProfiles = this.getStudentProfiles.bind(this);
   }
 
   componentDidMount(){
-    this.getCohortProfiles();
+    this.getMentorProfiles();
+    this.getStudentProfiles();
   }
 
-  getCohortProfiles() {
+  getMentorProfiles() {
     $.ajax({
       type:'GET',
       url: '/cohort',
       success: function(data) {
         this.setState({ mentors: data })
+      }.bind(this),
+      error: function(xhr, status, err){
+        console.error(err)
+      }.bind(this)
+    });
+  }
+
+  getStudentProfiles() {
+    $.ajax({
+      type:'GET',
+      url: '/cohort',
+      success: function(data) {
+        this.setState({ students: data })
       }.bind(this),
       error: function(xhr, status, err){
         console.error(err)
@@ -41,7 +56,7 @@ class Cohort extends React.Component {
           <h1 style={{color: "#FEFEFE"}}> COHORT 1 </h1>
         </div>
         <MentorList mentors={this.state.mentors} />
-        <StudentList />
+        <StudentList students={this.state.students}/>
         <ImageCollections />
       </div>
     )

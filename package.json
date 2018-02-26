@@ -9,7 +9,7 @@
     "express": "*",
     "history": "^4.7.2",
     "jquery": "*",
-    "mysql": "*",
+    "mysql2": "^1.5.2",
     "react": "*",
     "react-dom": "*",
     "react-router-dom": "^4.2.2"
