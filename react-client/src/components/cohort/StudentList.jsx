@@ -1,7 +1,10 @@
 import React from "react";
+import Student from "./Student.jsx"
 
 const StudentList = (props) => (
-  <div>"this is a test"</div>
+  <div style={{color: "#FEFEFE"}}>
+    {props.students.map(student => <Student student={student} key={student.id} />)}
+  </div>
 );
 
 export default StudentList;

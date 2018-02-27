@@ -1,26 +1,29 @@
 const db = require('../database/index.js');
 
 //Query dB for quotes
-exports.renderQuotes = (req, res) => {
-  console.log('got here')
+exports.getQuotes = (req, res) => {
     db.getHomeQuotes(data => {
       res.status(200).json(data);
     });
   }
 
 //Query dB for students & mentors
-exports.renderCohort = function(req, res) {
-  db.getAllStudents(res => {
-    res.status(200).json(res)
+
+exports.getStudents = function(req, res, next) {
+  db.getAllStudents(data => {
+    res.status(200).json(data)
   });
-  db.getAllMentors(res => {
-    res.status(200).json(res)
+}
+
+exports.getMentors = function(req, res, next) {
+  db.getAllMentors(data => {
+    res.status(200).json(data)
   });
 }
 
 //Query dB for single student
-exports.renderStudent= function(req, res) {
-  db.getSingleProfile(res => {
-      res.status(200).json(res)
+exports.getSingleStudent = function(req, res) {
+  db.getSingleProfile(data => {
+      res.status(200).json(data)
     });
   }

@@ -16,24 +16,24 @@ CREATE TABLE quotes (
  *  to create the database and the tables.*/
 
 
-INSERT INTO quotes (id, quote, source) VALUES ("'It became more than just learning code, when you work through the night with you peer beside you, that's when you realize you really are a family'", "Alex(smoky the bear)");
-INSERT INTO quotes (id, quote, source) VALUES ("'...doing what I love, hacking obstacles by coding a happy future... OneLove!'", "Edgar");
-INSERT INTO quotes (id, quote, source) VALUES ("'The present is theirs, the future for which I really work is mine.'", "Luis Nava(Jesse)");
-INSERT INTO quotes (id, quote, source) VALUES ("'I want to help create a Mexico, I wish it would have received me when I came back.'", "Leni");
-INSERT INTO quotes (id, quote, source) VALUES ("'Love to break my head when hacking!!!!'", "Cesar");
-INSERT INTO quotes (id, quote, source) VALUES ("'I like sports, ... and be able to help people in so many different ways.'", "Richie");
-INSERT INTO quotes (id, quote, source) VALUES ("'I cannot stress this enough, you need to console log all the time ...'", "Garima");
-INSERT INTO quotes (id, quote, source) VALUES ("'This is great opportunity for dreamers who have issue with paper work to continue studying'", "Eduardo Barranon");
-INSERT INTO quotes (id, quote, source) VALUES ("'blururudul'", "the unicorn club");
-INSERT INTO quotes (id, quote, source) VALUES ("'Always keep your head held high'", "Jack");
-INSERT INTO quotes (id, quote, source) VALUES ("'I´m really glad I found HolaCode, I can´t imagine doing anything else'", "Bruno");
-INSERT INTO quotes (id, quote, source) VALUES ("'vicepresident rised from the valley of coding unicorns to bring them to the food amusement of our new city now called home.'", "Len");
-INSERT INTO quotes (id, quote, source) VALUES ("'If you are more fortunate than others, build a longer table not a taller fence'", "Aida");
-INSERT INTO quotes (id, quote, source) VALUES ("'Ceviche!!!!!!!!!!!!!'", "Marco");
-INSERT INTO quotes (id, quote, source) VALUES ("'Putting in more hours, it will never not help you'", "Javier");
+INSERT INTO quotes (quote, source) VALUES ("'It became more than just learning code, when you work through the night with you peer beside you, that's when you realize you really are a family'", "Alex(smoky the bear)");
+INSERT INTO quotes (quote, source) VALUES ("'...doing what I love, hacking obstacles by coding a happy future... OneLove!'", "Edgar");
+INSERT INTO quotes (quote, source) VALUES ("'The present is theirs, the future for which I really work is mine.'", "Luis Nava(Jesse)");
+INSERT INTO quotes (quote, source) VALUES ("'I want to help create a Mexico, I wish it would have received me when I came back.'", "Leni");
+INSERT INTO quotes (quote, source) VALUES ("'Love to break my head when hacking!!!!'", "Cesar");
+INSERT INTO quotes (quote, source) VALUES ("'I like sports, ... and be able to help people in so many different ways.'", "Richie");
+INSERT INTO quotes (quote, source) VALUES ("'I cannot stress this enough, you need to console log all the time ...'", "Garima");
+INSERT INTO quotes (quote, source) VALUES ("'This is great opportunity for dreamers who have issue with paper work to continue studying'", "Eduardo Barranon");
+INSERT INTO quotes (quote, source) VALUES ("'blururudul'", "the unicorn club");
+INSERT INTO quotes (quote, source) VALUES ("'Always keep your head held high'", "Jack");
+INSERT INTO quotes (quote, source) VALUES ("'I´m really glad I found HolaCode, I can´t imagine doing anything else'", "Bruno");
+INSERT INTO quotes (quote, source) VALUES ("'vicepresident rised from the valley of coding unicorns to bring them to the food amusement of our new city now called home.'", "Len");
+INSERT INTO quotes (quote, source) VALUES ("'If you are more fortunate than others, build a longer table not a taller fence'", "Aida");
+INSERT INTO quotes (quote, source) VALUES ("'Ceviche!!!!!!!!!!!!!'", "Marco");
+INSERT INTO quotes (quote, source) VALUES ("'Putting in more hours, it will never not help you'", "Javier");
 
 
-CREATE TABLE profiles ( 
+CREATE TABLE profiles (
   id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   first_name varchar(32) NOT NULL,
   last_name varchar(32) NOT NULL,

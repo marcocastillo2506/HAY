@@ -10,81 +10,11 @@
 
   <body background="htmlbackground.jpg">
     <div id='main' class="header">
-      <a href="#home"> <img src="holacodeblackbanner.jpg" width="1200" height="120" border="0" alt="Yearbook"> </a>
+      <a href="/"> <img src="holacodeblackbanner.jpg" width="1200" height="120" border="0" alt="Yearbook"> </a>
     </div>
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 4</div>
-        <img src="creator-awards-4.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
+    <div id='app'></div>
 
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 4</div>
-        <img src="everyone-midcycle.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 4</div>
-        <img src="beginning-everyone.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 4</div>
-        <img src="inauguration-day.jpeg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-
-    <script>
-      var slideIndex = 0;
-      showSlides();
-
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 5000); // Change image every 5 seconds
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
-
+    <script type='text/javascript' src='bundle.js'></script>
   </body>
-
-</html>
-</body>
-
-<body>
-  <script type='text/javascript' src='bundle.js'></script>
-</body>
 
 </html>
