@@ -2,6 +2,7 @@
 build/
 compiled/
 react-client/dist/bundle.js
+pic-gallery/
 
 ## NPM ##
 node_modules/
