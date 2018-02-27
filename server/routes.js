@@ -4,7 +4,8 @@ const db = require('../database/index.js');
 exports.getQuotes = (req, res) => {
   db.getHomeQuotes()
     .then(data => {
-      res.status(200).send(data) })
+      res.status(200).send(data)
+    })
     .catch(err => { console.log(err) })
   }
 
@@ -18,7 +19,7 @@ exports.getCohortMembers = (req, res) => {
     .then(data => {
       res.status(200).send(data)
     })
-  .catch(err => { console.log(err)})
+    .catch(err => { console.log(err) })
 }
 
 //Query dB for single student
