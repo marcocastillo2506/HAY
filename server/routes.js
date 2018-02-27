@@ -9,15 +9,15 @@ exports.getQuotes = (req, res) => {
 
 //Query dB for students & mentors
 
-exports.getStudents = function(req, res, next) {
-  db.getAllStudents(data => {
-    res.status(200).json(data)
-  });
-}
+exports.getCohortMembers = function(req, res, next) {
+  let cohortData = {};
+  const cohortPromise = new Promise((resolve, reject) => {
 
-exports.getMentors = function(req, res, next) {
-  db.getAllMentors(data => {
-    res.status(200).json(data)
+  })
+  db.getAllStudents(data => {
+    db.getAllMentors(data => {
+
+    });
   });
 }
 
