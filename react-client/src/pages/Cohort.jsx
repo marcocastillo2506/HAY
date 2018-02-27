@@ -26,8 +26,9 @@ class Cohort extends React.Component {
       url: '/cohort',
       success: function(data) {
         this.setState({
-          mentors: ,
-          students: })
+          mentors: data[0],
+          students: data[1]
+        })
       }.bind(this),
       error: function(xhr, status, err){
         console.error(err)
