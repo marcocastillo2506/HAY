@@ -3,49 +3,53 @@ const mysqlConfig = require('./config.js');
 
 const connection = mysql.createConnection(mysqlConfig);
 
-const getHomeQuotes = function(callback) {
-  connection.query('SELECT * FROM quotes', function(err, data) {
-    if (err) {
-      callback(err);
-    } else {
-      callback(data);
-    }
-  });
+const getHomeQuotes = function() {
+  return new Promise((resolve, reject) => {
+    connection.query('SELECT * FROM quotes', (err, data) => {
+      if (err) {
+        return reject(err);
+      }
+    return resolve(data);
+    })
+  })
 };
 
-const getAllStudents = function(callback) {
-  connection.query('SELECT * FROM profiles WHERE role = "student"', function(err, data) {
-    if (err) {
-      callback(err);
-    } else {
-      callback(data);
-    }
-  });
+const getCohortStudents = function() {
+  return new Promise((resolve, reject) => {
+    connection.query('SELECT * FROM profiles WHERE role = "student"', (err, data) => {
+      if (err) {
+        return reject(err);
+      }
+    return resolve(data);
+    })
+  })
 };
 
-const getAllMentors = function(callback) {
-  connection.query('SELECT * FROM profiles WHERE role = "mentor"', function(err, data) {
-    if (err) {
-      callback(err);
-    } else {
-      callback(data);
-    }
-  });
+const getCohortMentors = function() {
+  return new Promise((resolve, reject) => {
+    connection.query('SELECT * FROM profiles WHERE role = "mentor"', (err, data) => {
+      if (err) {
+        return reject(err);
+      }
+    return resolve(data);
+    })
+  })
 };
 
-const getSingleProfile = function(callback) {
-  connection.query('SELECT * FROM profiles WHERE id = ?', function(err, data) {
-    if (err) {
-      callback(err);
-    } else {
-      callback(data);
-    }
-  });
+const getSingleProfile = function() {
+  return new Promise((resolve, reject) => {
+    connection.query('SELECT * FROM profiles WHERE id = ?', (err, data) => {
+      if (err) {
+        return reject(err);
+      }
+    return resolve(data);
+    })
+  })
 };
 
 module.exports = {
   getHomeQuotes,
-  getAllStudents,
-  getAllMentors,
+  getCohortStudents,
+  getCohortMentors,
   getSingleProfile
 };
