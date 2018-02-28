@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 
 import QuoteCollection from "../components/home/QuoteCollection.jsx";
 import HomeGallery from "../components/home/HomeGallery.jsx";
+import HolaCode from "../components/home/HolaCode.jsx";
 
 class Home extends React.Component {
   constructor() {
@@ -34,9 +35,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          <h1 style={{color: "#FEFEFE"}}> &lt;HOLACODE /&gt; YEARBOOK </h1>
-        </div>
+        <HolaCode />
         <QuoteCollection quotes={this.state.quotes}/>
         <div>
           <h2><Link to='cohort'>GET TO KNOW OUR COHORT</Link></h2>
