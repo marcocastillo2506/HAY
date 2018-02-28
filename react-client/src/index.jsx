@@ -1,20 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, hashHistory } from "react-router-dom";
+import {HashRouter,Route} from 'react-router-dom';
 
 import Home from "./pages/Home.jsx";
 import Cohort from "./pages/Cohort.jsx";
 import Student from "./pages/Student.jsx";
 
-const app = document.getElementById("app");
+class App extends React.Component {
 
-ReactDOM.render(
-  <Router history={hashHistory}>
+render(){
+  return(
+    <HashRouter>
     <div>
       <Route exact path="/" component={Home} />
       <Route exact path="/cohort" name="cohort" component={Cohort} />
       <Route path="/student(/:id)" name="student" component={Student} />
     </div>
-  </Router>,
-  app
-);
+  </HashRouter>
+)}
+}
+
+ReactDOM.render(<App/>, document.getElementById('app'));

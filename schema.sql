@@ -58,15 +58,15 @@ CREATE TABLE profiles (
 */
 
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path)
-VALUES ("Abimael", "Hernandez", "student", 1, "abimaelhernandez", "A6ppJ5z");
+VALUES ("Abimael ", "Hernandez ", "student ", 1, " abimaelhernandez ", "A6ppJ5z");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path)
-VALUES ("Alejandro", "Rodriguez", "student", 1, "AlejandroRodriguezP", "XcvzwAI");
+VALUES ("Alejandro ", "Rodriguez ", "student ", 1, "AlejandroRodriguezP ", "XcvzwAI");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path)
-VALUES ("Armando", "Cano", "student", 1, "armandocano91", "puks3Pr");
+VALUES ("Armando ", "Cano ", "student ", 1, "armandocano91 ", "puks3Pr ");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path)
-VALUES ("Beatriz", "Garcia", "student", 1, "Beagbarreto", "25RYcRD");
+VALUES ("Beatriz ", "Garcia ", "student ", 1, "Beagbarreto ", "25RYcRD ");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path)
-VALUES ("Bruno", "Torres", "student", 1, "BrunoTorresF", "02nq7tM");
+VALUES ("Bruno ", "Torres ", "student ", 1, "BrunoTorresF ", "02nq7tM ");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path)
 VALUES ("Cesar", "Tapia", "student", 1, "Cesar88Tapia", "5p4K9F9");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path)

@@ -7,6 +7,16 @@
   margin: auto;
 }
 
+/* This is for the banner in the home page*/
+.banner{
+  margin: center;
+width: 50%;
+border: 3px solid black;
+padding: 0px;
+  position: absolute;
+}
+
+
 /* Hide the images by default */
 .mySlides {
     display: none;
@@ -71,7 +81,7 @@
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #E93939;
 }
 
 /* Fading animation */
