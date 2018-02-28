@@ -38,7 +38,7 @@ class Home extends React.Component {
         <HolaCode/>
         <QuoteCollection quotes={this.state.quotes}/>
         <div>
-          <h2><Link to='cohort'>GET TO KNOW OUR COHORT</Link></h2>
+          <h2><Link to='cohort'>Know Our Cohort</Link></h2>
         </div>
         <HomeGallery />
       </div>

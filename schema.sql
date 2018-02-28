@@ -24,13 +24,13 @@ INSERT INTO quotes (quote, source) VALUES ("'Love to break my head when hacking!
 INSERT INTO quotes (quote, source) VALUES ("'I like sports, ... and be able to help people in so many different ways.'", "Richie");
 INSERT INTO quotes (quote, source) VALUES ("'I cannot stress this enough, you need to console log all the time ...'", "Garima");
 INSERT INTO quotes (quote, source) VALUES ("'This is great opportunity for dreamers who have issue with paper work to continue studying'", "Eduardo Barranon");
-INSERT INTO quotes (quote, source) VALUES ("'blururudul'", "the unicorn club");
+INSERT INTO quotes (quote, source) VALUES ("'Blururudul'", "the unicorn club");
 INSERT INTO quotes (quote, source) VALUES ("'Always keep your head held high'", "Jack");
 INSERT INTO quotes (quote, source) VALUES ("'I´m really glad I found HolaCode, I can´t imagine doing anything else'", "Bruno");
-INSERT INTO quotes (quote, source) VALUES ("'vicepresident rised from the valley of coding unicorns to bring them to the food amusement of our new city now called home.'", "Len");
+INSERT INTO quotes (quote, source) VALUES ("'Vicepresident rised from the valley of coding unicorns to bring them to the food amusement of our new city now called home.'", "Len");
 INSERT INTO quotes (quote, source) VALUES ("'If you are more fortunate than others, build a longer table not a taller fence'", "Aida");
 INSERT INTO quotes (quote, source) VALUES ("'Ceviche!!!!!!!!!!!!!'", "Marco");
-INSERT INTO quotes (quote, source) VALUES ("'Putting in more hours, it will never not help you'", "Javier");
+INSERT INTO quotes (quote, source) VALUES ("'Putting in more hours, will never not help you'", "Javier");
 
 
 CREATE TABLE profiles (

@@ -6,16 +6,56 @@
   position: relative;
   margin: auto;
 }
-
-/* This is for the banner in the home page*/
-.banner{
-  margin: center;
-width: 50%;
-border: 3px solid black;
-padding: 0px;
-  position: absolute;
+/*This is for the 3 columns in the home page*/
+.column {
+    float: left;
+    width: 0%;
 }
 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*This is for the 3 columns in the Cohort page*/
+.column {
+    float: left;
+    width: 0%;
+}
+
+/* Clear floats after the columns */
+.rowCohort:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* This is for the banner in the home page HolaCode.jsx*/
+.banner{
+  margin: center;
+width: 35%;
+height: 20%;
+  position: center;
+}
+
+/*This is for the left image in the header at home HolaCode.jsx*/
+.bannerL{
+  margin: left;
+width: 420px;
+height: 140px;
+  position: left;
+}
+
+/*This is for the right image in the header at home HolaCode.jsx*/
+.bannerR{
+  margin: right;
+  width: 420px;
+  height: 140px;
+  position: right;
+}
 
 /* Hide the images by default */
 .mySlides {

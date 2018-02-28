@@ -1,10 +1,13 @@
 import $ from "jquery";
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HolaCode from '../components/home/HolaCode.jsx'
 
 import MentorList from "../components/cohort/MentorList.jsx";
 import StudentList from "../components/cohort/StudentList.jsx";
 import ImageCollections from "../components/cohort/ImageCollections.jsx";
+
+
 
 class Cohort extends React.Component {
   constructor() {
@@ -40,7 +43,7 @@ class Cohort extends React.Component {
     return(
       <div>
         <div>
-          <Link to='/'><h1> &lt;HOLACODE /&gt; YEARBOOK </h1></Link>
+          <HolaCode />
           <h1 style={{color: "#FEFEFE"}}> COHORT 1 </h1>
         </div>
         <MentorList mentors={this.state.mentors} />
