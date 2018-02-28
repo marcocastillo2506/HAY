@@ -91,3 +91,8 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.profile-picture {
+  height: 128px;
+  width: 128px
+}
