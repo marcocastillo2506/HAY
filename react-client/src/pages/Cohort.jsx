@@ -1,7 +1,8 @@
 import $ from "jquery";
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HolaCode from '../components/home/HolaCode.jsx'
+import HolaCode from '../components/home/HolaCode.jsx';
+import TabsExampleSimple from "../components/home/Tabsss.jsx";
 
 import MentorList from "../components/cohort/MentorList.jsx";
 import StudentList from "../components/cohort/StudentList.jsx";
@@ -42,15 +43,28 @@ class Cohort extends React.Component {
   render(){
     return(
       <div>
-        <div>
-          <HolaCode />
-          <h1 style={{color: "#FEFEFE"}}> COHORT 1 </h1>
+        <div id='tabs'>
+          <TabsExampleSimple />
         </div>
-        <MentorList mentors={this.state.mentors} />
+        <div id='fondoCohort'>
+        <div>
+          <Link to='/'><HolaCode /></Link>
+        </div>
+        <div>
+          <h1 style={{color: "purple"}}> COHORT 1 </h1>
+        </div>
+        <div>
+          <MentorList mentors={this.state.mentors} />
+        </div>
+        <div>
         <StudentList students={this.state.students}/>
+        </div>
+        <div>
         <ImageCollections />
+        </div>
       </div>
+    </div>
     )
   }
-}
+};
 export default Cohort;

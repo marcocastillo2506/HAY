@@ -2,9 +2,11 @@ import $ from "jquery";
 import React from "react";
 import {Link} from "react-router-dom";
 
+
 import QuoteCollection from "../components/home/QuoteCollection.jsx";
 import HomeGallery from "../components/home/HomeGallery.jsx";
 import HolaCode from "../components/home/HolaCode.jsx";
+import TabsExampleSimple from "../components/home/Tabsss.jsx";
 
 class Home extends React.Component {
   constructor() {
@@ -35,13 +37,21 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <HolaCode/>
-        <QuoteCollection quotes={this.state.quotes}/>
-        <div>
-          <h2><Link to='cohort'>Know Our Cohort</Link></h2>
+        <div id='tabs'>
+          <TabsExampleSimple />
         </div>
-        <HomeGallery />
+        <div id='fondoHome'>
+        <div>
+          <HolaCode />
+        </div>
+        <div>
+          <QuoteCollection quotes={this.state.quotes}/>
+        </div>
+        <div>
+          <HomeGallery />
+        </div>
       </div>
+    </div>
     );
   }
 }
