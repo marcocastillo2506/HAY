@@ -1,4 +1,18 @@
-* {box-sizing:border-box}
+* {box-sizing: border-box;}
+
+/*This is for the tabs*/
+.rowTH {
+    display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.columnTH {
+    flex: 50%;
+    padding: 10px;
+    height: 10px;
+}
+
+/***********************/
 
 /* Slideshow container */
 .slideshow-container {
@@ -8,8 +22,8 @@
 }
 /*This is for the 3 columns in the home page*/
 .column {
-    float: left;
-    width: 0%;
+    float: center;
+    width: 33.33%;
 }
 
 /* Clear floats after the columns */
@@ -18,44 +32,116 @@
     display: table;
     clear: both;
 }
-
-/*This is for the 3 columns in the Cohort page*/
-.column {
+/*logo image*/
+#logo{
+  align-content: center;
+}
+/*to make the logo have round edges*/
+#HC{
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+border-bottom-left-radius: 25px;
+}
+/*tabs aliigment*/
+#tabs{
+  height: 78px;
+}
+/* This is for the banner in the home page HolaCode.jsx*/
+.banner{
+  margin: auto 0px;
+  margin-top: 1%;
+width: 35%;
+height: 2%;
+  position: center;
+}
+/*columns for the tabs */
+.columnT {
     float: left;
-    width: 0%;
+    width: 50%;
 }
 
 /* Clear floats after the columns */
-.rowCohort:after {
+.rowInUI:after {
     content: "";
     display: table;
     clear: both;
 }
-
-
-/* This is for the banner in the home page HolaCode.jsx*/
-.banner{
-  margin: center;
-width: 35%;
-height: 20%;
-  position: center;
+/*background pic for Cohorts.jsx*/
+#fondoCohort{
+   background-image: url("https://wallpapertag.com/wallpaper/full/6/e/a/566711-textured-hd-wallpapers-1920x1080-photos.jpg");
+}
+/*background pic for Home.jsx*/
+#fondoHome{
+   background-image: url("https://wallpapertag.com/wallpaper/full/6/e/a/566711-textured-hd-wallpapers-1920x1080-photos.jpg");
 }
 
-/*This is for the left image in the header at home HolaCode.jsx*/
-.bannerL{
-  margin: left;
-width: 420px;
-height: 140px;
-  position: left;
+
+/*this is for the reachers pictures
+in the COHORT in cohort.jsx*/
+#teachersPic{
+  box-shadow: 10px 8px 30px #fff;
+  margin: 25px 25px 25px 25px;
+  background-color: #92a8d1;
+  border: 8px groove orange;
+  border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+border-bottom-left-radius: 25px;
+}
+#teachersFN{
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  outline: thin ridge green;
+}
+#teachersLN{
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  outline: thin ridge red;
+}
+#teachersGH{
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  outline: thin ridge yellow;
+}
+#studentsPic{
+  box-shadow: 10px 8px 30px #fff;
+  margin: 25px 25px 25px 25px;
+  background-color: #92a8d1;
+  border: 8px groove orange;
+  border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+border-bottom-left-radius: 25px;
+}
+#studentsFN{
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  outline: thin ridge green;
+}
+#studentsLN{
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  outline: thin ridge red;
+}
+#studentsGH{
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  outline: thin ridge yellow;
 }
 
-/*This is for the right image in the header at home HolaCode.jsx*/
-.bannerR{
-  margin: right;
-  width: 420px;
-  height: 140px;
-  position: right;
-}
 
 /* Hide the images by default */
 .mySlides {
