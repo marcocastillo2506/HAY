@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import QuoteCollection from "../components/home/QuoteCollection.jsx";
 import HomeGallery from "../components/home/HomeGallery.jsx";
 import HolaCode from "../components/home/HolaCode.jsx";
-import TabsExampleSimple from "../components/home/Tabsss.jsx";
+import AppBarTest from "../components/home/AppBar.jsx";
 
 class Home extends React.Component {
   constructor() {
@@ -37,10 +37,10 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <div id='tabs'>
-          <TabsExampleSimple />
-        </div>
-        <div id='fondoHome'>
+
+          <AppBarTest />
+    
+      <div id='fondoHome'>
         <div>
           <HolaCode />
         </div>

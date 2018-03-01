@@ -1,8 +1,9 @@
 import $ from "jquery";
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import HolaCode from '../components/home/HolaCode.jsx';
-import TabsExampleSimple from "../components/home/Tabsss.jsx";
+import AppBarTest from "../components/home/AppBar.jsx";
 
 import MentorList from "../components/cohort/MentorList.jsx";
 import StudentList from "../components/cohort/StudentList.jsx";
@@ -44,7 +45,7 @@ class Cohort extends React.Component {
     return(
       <div>
         <div id='tabs'>
-          <TabsExampleSimple />
+          <AppBarTest />
         </div>
         <div id='fondoCohort'>
         <div>
