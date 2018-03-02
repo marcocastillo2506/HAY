@@ -12,8 +12,8 @@ import ImageCollections from "../components/cohort/ImageCollections.jsx";
 
 
 class Cohort extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       mentors: [],
       students: []
