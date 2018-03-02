@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {HashRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Home from "./pages/Home.jsx";
@@ -10,14 +10,14 @@ class App extends React.Component {
 
 render(){
   return(
-    <HashRouter>
+    <BrowserRouter>
     <MuiThemeProvider>
     <div>
       <Route exact path="/" component={Home} />
       <Route exact path="/cohort" name="cohort" component={Cohort} />
     </div>
     </MuiThemeProvider>
-  </HashRouter>
+  </BrowserRouter>
 )}
 };
 
