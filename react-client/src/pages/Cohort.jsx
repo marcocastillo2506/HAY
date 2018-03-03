@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 
 import HolaCode from '../components/home/HolaCode.jsx';
-import AppBarTest from "../components/home/AppBar.jsx";
+import HeaderBar from "../components/home/HeaderBar.jsx";
 
 import MentorList from "../components/cohort/MentorList.jsx";
 import StudentList from "../components/cohort/StudentList.jsx";
@@ -44,7 +44,7 @@ export default class Cohort extends React.Component {
     return(
       <div>
         <div id='tabs'>
-          <AppBarTest />
+          <HeaderBar />
         </div>
         <div id='fondoCohort'>
         <div>

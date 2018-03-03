@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import SingleQuote from "../components/home/GetSingleQuote.jsx";
 import HomeGallery from "../components/home/HomeGallery.jsx";
 import HolaCode from "../components/home/HolaCode.jsx";
-import AppBarTest from "../components/home/AppBar.jsx";
+import HeaderBar from "../components/home/HeaderBar.jsx";
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -17,7 +17,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-          <AppBarTest />
+          <HeaderBar />
         <div>
           <HolaCode />
         </div>
