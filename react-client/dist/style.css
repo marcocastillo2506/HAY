@@ -51,10 +51,18 @@ border-bottom-left-radius: 25px;
 .banner{
   margin: auto 0px;
   margin-top: 1%;
-width: 35%;
-height: 2%;
+width: 50%;
+height: 5%;
   position: center;
 }
+/*beautify random quotes in GetSingleQuote.jsx*/
+.quotes{
+  font-size: 150%;
+  position: absolute;
+  left: 100;
+  top: 100;
+}
+
 /*columns for the tabs */
 .columnT {
     float: left;

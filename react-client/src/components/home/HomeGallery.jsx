@@ -1,7 +1,7 @@
 import React from "react";
 
 const HomeGallery = (props) => (
-  <div>"this is a poop test"</div>
+  <div></div>
 )
 
 export default HomeGallery;
