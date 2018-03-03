@@ -15,6 +15,6 @@ app.get("/home", route.getQuotes)
 
 app.get("/cohort", route.getCohortMembers)
 
-//app.get('/student/:id', routes.renderStudent)
+app.get('/profile/:id', route.renderProfile)
 
 module.exports = app;

@@ -1,9 +1,7 @@
 import React from "react";
 import $ from "jquery";
 
-
-
-class GetSingleQuote extends React.Component {
+export default class GetSingleQuote extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,13 +14,17 @@ class GetSingleQuote extends React.Component {
     this.getQuotes();
   }
 
+  componentWillUnmount(){
+    clearInterval(this.quoteTimer)
+  }
+
   getQuotes() {
     $.ajax({
       type:'GET',
       url: '/home',
       success: (data) => {
         data = data.map((quoteObj) => [quoteObj.quote, quoteObj.source]);
-        setInterval(() => this.randomQuote(data), 5000);
+        this.quoteTimer = setInterval(() => this.randomQuote(data), 2000);
       },
       error: (xhr, status, err) => {
         console.error(err)
@@ -43,7 +45,3 @@ class GetSingleQuote extends React.Component {
     );
   }
 }
-
-
-
-export default GetSingleQuote;

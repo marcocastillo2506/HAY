@@ -1,9 +1,9 @@
 import React from "react";
-import Student from "./Student.jsx"
+import StudentThumbnail from "./StudentThumbnail.jsx"
 
 const StudentList = (props) => (
-  <div style={{color: "#ff0000"}}>
-    {props.students.map(student => <Student student={student} key={student.id} />)}
+  <div>
+    {props.students.map(student => <StudentThumbnail student={student} key={student.id} match={props.match}/>)}
   </div>
 );
 

@@ -8,7 +8,7 @@ import HomeGallery from "../components/home/HomeGallery.jsx";
 import HolaCode from "../components/home/HolaCode.jsx";
 import AppBarTest from "../components/home/AppBar.jsx";
 
-class Home extends React.Component {
+export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -31,5 +31,3 @@ class Home extends React.Component {
     );
   }
 }
-
-export default Home;

@@ -1,6 +1,6 @@
 import $ from "jquery";
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 import HolaCode from '../components/home/HolaCode.jsx';
 import AppBarTest from "../components/home/AppBar.jsx";
@@ -8,10 +8,9 @@ import AppBarTest from "../components/home/AppBar.jsx";
 import MentorList from "../components/cohort/MentorList.jsx";
 import StudentList from "../components/cohort/StudentList.jsx";
 import ImageCollections from "../components/cohort/ImageCollections.jsx";
+import Profile from "./Profile.jsx"
 
-
-
-class Cohort extends React.Component {
+export default class Cohort extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -54,18 +53,13 @@ class Cohort extends React.Component {
         <div>
           <h1 style={{color: "purple"}}> COHORT 1 </h1>
         </div>
-        <div>
-          <MentorList mentors={this.state.mentors} />
-        </div>
-        <div>
-        <StudentList students={this.state.students}/>
-        </div>
-        <div>
+        <MentorList mentors={this.state.mentors} match={this.props.match}/>
+        <StudentList students={this.state.students} match={this.props.match}/>
         <ImageCollections />
-        </div>
+
+        <Route path={`${this.props.match.url}/:id`} render={(props) => <Profile {...props} data={this.state}/> } />
       </div>
     </div>
     )
   }
 };
-export default Cohort;

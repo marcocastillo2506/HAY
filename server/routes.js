@@ -1,4 +1,5 @@
 const db = require('../database/index.js');
+const url = require('url');
 
 //Query dB for quotes
 exports.getQuotes = (req, res) => {
@@ -23,8 +24,11 @@ exports.getCohortMembers = (req, res) => {
 }
 
 //Query dB for single student
-exports.getSingleStudent = function(req, res) {
-  db.getSingleProfile(data => {
+exports.renderProfile = function(req, res) {
+  let profId = req.url.params.id;
+  db.getSingleProfile(profId)
+    .then(data => {
       res.status(200).json(data)
-    });
+    })
+    .catch(err => {console.log(err) })
   }

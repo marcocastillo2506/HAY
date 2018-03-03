@@ -36,9 +36,9 @@ const getCohortMentors = function() {
   })
 };
 
-const getSingleProfile = function() {
+const getSingleProfile = function(profId) {
   return new Promise((resolve, reject) => {
-    connection.query('SELECT * FROM profiles WHERE id = ?', (err, data) => {
+    connection.query('SELECT * FROM profiles WHERE id = profId', (err, data) => {
       if (err) {
         return reject(err);
       }
