@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MentorThumbnail = (props) => (
   <div style={{color: "black"}}>
-    <img id='teachersPic' className="profile-picture" src={`https://i.imgur.com/${props.mentor.picture_path}.jpg`}/>
-    <span id='teachersFN'>{props.mentor.first_name}</span>
+    <Link to={`${props.match.url}/${props.mentor.id}`}>
+      <img id='teachersPic' className="profile-picture" src={`https://i.imgur.com/${props.mentor.picture_path}.jpg`}/>
+    </Link>
+      <span id='teachersFN'>{`${props.mentor.first_name} ${props.mentor.last_name}`}</span>
+    </div>
 )
 
 export default MentorThumbnail;
