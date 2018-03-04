@@ -3,7 +3,8 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 
-import SingleQuote from "../components/home/GetSingleQuote.jsx";
+import GetSingleQuote from "../components/home/GetSingleQuote.jsx";
+import ExtraComponent from "../components/home/ExtraComponent.jsx";
 import HomeGallery from "../components/home/HomeGallery.jsx";
 import HolaCode from "../components/home/HolaCode.jsx";
 import HeaderBar from "../components/home/HeaderBar.jsx";
@@ -17,16 +18,23 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
+        <div>
           <HeaderBar />
-        <div>
-          <HolaCode />
         </div>
-        <div>
-          <SingleQuote />
-        </div>
-        <div>
-          <HomeGallery />
-        </div>
+          <div id='fondoBanner'>
+                <HolaCode />
+          </div>
+          <div id="fondoHome">
+              <div>
+                <GetSingleQuote />
+              </div>
+              <div>
+                <HomeGallery />
+              </div>
+              <div>
+                <ExtraComponent />
+              </div>
+          </div>
       </div>
     );
   }
