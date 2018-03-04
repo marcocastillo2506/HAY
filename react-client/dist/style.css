@@ -1,90 +1,105 @@
-* {box-sizing: border-box;}
+/*This is where the logo row can be modified*/
+ .logo-section{
+   width: 100%;
+   padding-top: 0%;
+   padding-bottom: 0%;
+   text-align: center;
+ }
+ #logo{
+   margin-top: 30px;
+   height: 250px;
+ }
+ /*111Modifies only the quotes rendering in the home page*/
 
-/*This is for the tabs*/
-.rowTH {
-    display: flex;
+
+/*This is where the modification of the ````logo```` row ends*/
+
+/*This is where the 1st row can be modified, where the quotes are rendering
+ and the card to the left and right of the quotes in the home page*/
+ .top-section{
+   width: 100%;
+   padding-top: 0%;
+   padding-bottom: 0%;
+   text-align: center;
+ }
+ /*Modifies only the quotes rendering in the home page*/
+#QuotesInTheCenter{
+  color: black;
+  font-style: italic;
+  font-size: 35px;
 }
 
-/* Create two equal columns that sits next to each other */
-.columnTH {
-    flex: 50%;
-    padding: 10px;
-    height: 10px;
-}
+/*This is where the modification of the 1st row end*/
+
+/*This is where the 2nd row can be modified, where the pictures are rendering
+ and the card to the left and right of the pictures in the home page */
+ .second-section{
+   width: 100%;
+   padding-top: 0%;
+   padding-bottom: 0%;
+   text-align: center;
+ }
+
+ /*This is where the modification of the 2nd row ends*/
+
+ /*This is where the 3rd row can be modified, where there isn't another component in the middle yet
+  it has the card to the left and right in the home page */
+  .third-section{
+    width: 100%;
+    padding-top: -0;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+
+  /*This is where the modification of the 3rd row ends*/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*this is where the properties for all the cards can be changed and as for now it is in the home page*/
+ #card{
+   color: red;
+   outline: 50px ridge green;
+ }
+/*This is where the modification for cards ends*/
 
 /***********************/
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-/*This is for the 3 columns in the home page*/
-.column {
-    float: center;
-    width: 33.33%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-/*logo image*/
-#logo{
-  align-content: center;
-}
-/*to make the logo have round edges*/
-#HC{
-border-top-left-radius: 25px;
-border-top-right-radius: 25px;
-border-bottom-right-radius: 25px;
-border-bottom-left-radius: 25px;
-}
-/*tabs aliigment*/
-#tabs{
-  height: 48px;
-}
-/* This is for the banner in the home page HolaCode.jsx*/
+/* This is for the banner in the home page HolaCode.jsx, you can modify it's position here*/
 .banner{
-  margin: auto 0px;
-  margin-top: 1%;
-width: 50%;
-height: 5%;
-  position: center;
+width: 85%;
+height: 100%;
+  position: relative;
 }
 /*beautify random quotes in GetSingleQuote.jsx*/
-.quotes{
-  font-size: 150%;
-  position: absolute;
-  left: 100;
-  top: 100;
-}
 
-/*columns for the tabs */
-.columnT {
-    float: left;
-    width: 50%;
-}
-
-/* Clear floats after the columns */
-.rowInUI:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 /*background pic for Cohorts.jsx*/
 #fondoCohort{
-   background-image: url("https://wallpapertag.com/wallpaper/full/6/e/a/566711-textured-hd-wallpapers-1920x1080-photos.jpg");
+   background-image: url("https://i.pinimg.com/originals/4f/6d/05/4f6d052bb1b26150115888ea06d4c106.jpg");
 }
 /*background pic for Home.jsx*/
-#fondoHome{
-   background-image: url("https://wallpapertag.com/wallpaper/full/6/e/a/566711-textured-hd-wallpapers-1920x1080-photos.jpg");
+#fondoBanner{
+  margin-top: 63px;
+  width: 100%;
+  height: 275px;
+   background-image: url("https://i.imgur.com/8IbWFkl.jpg");
 }
-
-
+#fondoHome{
+  background-size: auto;
+  background-color: white;
+}
+/*This is where you can modify the tab all the way the top of the home page*/
+#appBar{
+  background-color: #48D1CC;
+  position: fixed,sticky;
+  width: 100%;
+  margin-right: 0px;
+}
+#tabButtonHome{
+  color: #6495ED;
+  font-size: 30px;
+}
+#tabButtonCohort{
+  color: #4682B4;
+  font-size: 30px;
+}
 /*this is for the reachers pictures
 in the COHORT in cohort.jsx*/
 #teachersPic{
@@ -150,93 +165,74 @@ border-bottom-left-radius: 25px;
   outline: thin ridge yellow;
 }
 
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #E93939;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 .profile-picture {
-  height: 128px;
-  width: 128px
+  height: 100px;
+  width: 100px
+}
+/*This is to modify the paper in all the cards in home.jsx*/
+.card{
+  background-color: #FFF8DC;
+  width: 289px;
+}
+.card-img-top-Marcela{
+  width: 287px;
+  height: 290px;
+}
+.card-img-top-Aida{
+  width: 287px;
+  height: 350px;
+}
+.card-img-top-Diana{
+  width: 287px;
+  height: 350px;
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*This makes the cards on the right column align with the right border*/
+#card2{
+  position: fixed;
+}
+.card-img-top-Nicolas{
+  width: 287px;
+  height: 290px;
+}
+.card-img-top-Leni{
+  width: 290px;
+  height: 350px;
+}
+.card-img-top-Cas{
+  width: 287px;
+  height: 290px;
+}
+.card-img-top-Cas{
+  width: 293px;
+  height: 350px;
+}
+
+.card3{
+  padding-left: 50px;
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }

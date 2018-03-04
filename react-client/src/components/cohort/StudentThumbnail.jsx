@@ -6,7 +6,10 @@ const StudentThumbnail = (props) => (
     <Link to={`${props.match.url}/${props.student.id}`}>
       <img id='studentsPic' className="profile-picture" src={`https://i.imgur.com/${props.student.picture_path}.jpg`}/>
     </Link>
-    <span style={{color: "purple"}} id='studentsFN'>{`${props.student.first_name} ${props.student.last_name}`}</span>
+
+    <span id='studentsF-LN'>{`${props.student.first_name} ${props.student.last_name}`}</span>
+
+
   </div>
 )
 

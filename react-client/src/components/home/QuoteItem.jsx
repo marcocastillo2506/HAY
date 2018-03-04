@@ -8,4 +8,3 @@ const QuoteItem = (props) => (
 );
 
 export default QuoteItem;
-//Renders with dummy data, needs bootstrap

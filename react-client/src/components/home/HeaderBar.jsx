@@ -17,19 +17,15 @@ const styles = {
  * This example uses an [IconButton](/#/components/icon-button) on the left, has a clickable `title`
  * through the `onClick` property, and a [FlatButton](/#/components/flat-button) on the right.
  */
-const HeaderBar = (props) => (
-  <div>
-    <AppBar>
-      <Toolbar>
-        <Typography variant="title" color="inherit">
-          <Link to="/"><span>Home</span></Link>
-        </Typography>
-        <Typography variant="title" color="inherit">
-          <Link to="/cohort"><Button label="Cohort" color="inherit">Cohort</Button></Link>
-        </Typography>
-      </Toolbar>
-    </AppBar>
-  </div>
-)
+  const HeaderBar = (props) => (
+    <div>
+      <AppBar id='appBar'>
+          <Toolbar>
+            <Link to="/"><Button id='tabButtonHome'>Home</Button></Link>
+            <Link to="/cohort"><Button id='tabButtonCohort' label="Cohort" color="inherit">Cohort</Button></Link>
+          </Toolbar>
+      </AppBar>
+    </div>
+  );
 
-export default HeaderBar;
+  export default HeaderBar;
