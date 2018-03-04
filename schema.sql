@@ -58,15 +58,15 @@ CREATE TABLE profiles (
 */
 
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
-VALUES ("Abimael ", "Hernandez ", "student ", 1, " abimaelhernandez ", "A6ppJ5z", "Hidalgo was the second-born child of Don Cristóbal Hidalgo y Costilla and Doña Ana María Gallaga Mandarte Villaseñor.[7] Hidalgo was born a criollo");
+VALUES ("Abimael", "Hernandez", "student", 1, " abimaelhernandez", "A6ppJ5z", "Hidalgo was the second-born child of Don Cristóbal Hidalgo y Costilla and Doña Ana María Gallaga Mandarte Villaseñor.[7] Hidalgo was born a criollo");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
-VALUES ("Alejandro ", "Rodriguez ", "student ", 1, "AlejandroRodriguezP", "XcvzwAI", "It became more than just learning code, when you work through at night with a peer beside you, that's when I realize we really are a family.");
+VALUES ("Alejandro", "Rodriguez", "student", 1, "AlejandroRodriguezP", "XcvzwAI", "It became more than just learning code, when you work through at night with a peer beside you, that's when I realize we really are a family.");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
-VALUES ("Armando ", "Cano ", "student ", 1, "armandocano91 ", "puks3Pr", "I knew always deep inside of me, that I was going to get the power to create something thanks to technology. Now, thanks to HolaCode I know how I'd like to grow as a professional, a software engineer, but most important of all, grow as a human being.");
+VALUES ("Armando", "Cano", "student", 1, "armandocano91", "puks3Pr", "I knew always deep inside of me, that I was going to get the power to create something thanks to technology. Now, thanks to HolaCode I know how I'd like to grow as a professional, a software engineer, but most important of all, grow as a human being.");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
-VALUES ("Beatriz ", "Garcia ", "student ", 1, "Beagbarreto ", "25RYcRD ", "Bicepresident");
+VALUES ("Beatriz", "Garcia", "student", 1, "Beagbarreto", "25RYcRD", "Bicepresident");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
-VALUES ("Bruno ", "Torres ", "student ", 1, "BrunoTorresF ", "02nq7tM ", "There are three things I love in this world: Mexico City, programming, and beer (not necessarily in that order). I’ve always loved technology so getting into programming was only a matter of time. Though, I only know JavaScript at the moment, I hope to learn a few other up-and-coming languages (Go, Rust, Dart).In my spare time, I like watching TV shows (British dramas and American sitcoms are the best), reading good sci-fi, and occasionally cooking.");
+VALUES ("Bruno", "Torres", "student", 1, "BrunoTorresF", "02nq7tM", "There are three things I love in this world: Mexico City, programming, and beer (not necessarily in that order). I’ve always loved technology so getting into programming was only a matter of time. Though, I only know JavaScript at the moment, I hope to learn a few other up-and-coming languages (Go, Rust, Dart).In my spare time, I like watching TV shows (British dramas and American sitcoms are the best), reading good sci-fi, and occasionally cooking.");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
 VALUES ("Cesar", "Tapia", "student", 1, "Cesar88Tapia", "5p4K9F9", "Love to break my head when hacking!!!!");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
@@ -84,7 +84,7 @@ VALUES ("Javier", "Solis", "student", 1, "ElizaldeJE", "swc5HyP", "Adolf Hitler,
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
 VALUES ("Jorge", "Cervantes", "student", 1, "JorgeC0218", "pUJlMvr", "Always keep your head held high");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
-VALUES ("Jorge", "Lerma", "student", 1, "jorgelerma", "blah", "Fidel Alejandro Castro Ruz August 13, 1926 – November 25, 2016) was a Cuban communist revolutionary and politician who governed the Republic of Cuba as Prime Minister.");
+VALUES ("Jorge", "Lerma", "student", 1, "jorgelerma", "frsg6wz", "Fidel Alejandro Castro Ruz August 13, 1926 – November 25, 2016) was a Cuban communist revolutionary and politician who governed the Republic of Cuba as Prime Minister.");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
 VALUES ("Joseph", "Fernandez", "student", 1, "JosephFernandez2689", "GjA2Drj", "Born in Mexico, raised in the States, New Yorker at heart. If I can help someone I will. I am relaxed and crazy. Sometimes I go out and drink with friends, really laid back, and  the New Yorker comes out hahah . I live life ... live it good we are not suppose to give it back in-tact. There is always something to learn.");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
@@ -94,9 +94,9 @@ VALUES ("Luis", "Avila", "student", 1, "Lalolalo85", "mYEVQv1", "I´m outgoing, 
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
 VALUES ("Luis Gerardo", "Nava", "student", 1, "luisgnava", "rvaeR5F", "'The present is theirs, the future for which I really worked is mine'");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
-VALUES ("Luis", "Ortiz", "student", 1, "Luisortizlopez", "LK9uEa2", "Enrique Peña Nieto born 20 July 1966),[1] sometimes referred to by his initials EPN,[2] is a Mexican politician serving as the 57th and current President of Mexico.");
+VALUES ("Luis", "Ortiz", "student", 1, "Luisortizlopez", "PSyVaYL", "Enrique Peña Nieto born 20 July 1966),[1] sometimes referred to by his initials EPN,[2] is a Mexican politician serving as the 57th and current President of Mexico.");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
-VALUES ("Marco", "Castillo", "student", 1, "marcocastillo2506", "PSyVaYL", "If you want to destroy any nation without a war , coding is your sword");
+VALUES ("Marco", "Castillo", "student", 1, "marcocastillo2506", "LK9uEa2", "If you want to destroy any nation without a war , coding is your sword");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
 VALUES ("Miriam", "Alvarez", "student", 1, "miriam30", "YMqvYSw", "uhmm something about me, well I like to eat and also going to expos, conventions and finding cool places to go eat since I tend to get lose easily, it helps to find cool spots to see and eat.");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
