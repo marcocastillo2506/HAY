@@ -1,17 +1,17 @@
 import React from "react";
 
 const HolaCode = (props) => (
+  <section className="logo-section">
     <div className="row">
-      <section className="logo-section">
-      <div className="col-md-0">
+      <div id="contentWithinBlueWallpaper" className="col-md-3">
       </div>
-      <div id='logo' className="col-md-12">
-        <img src={"https://i.imgur.com/1NLiQLO.png"}alt="HolaCode" className="banner"/>
+      <div id="contentWithinBlueWallpaper" className="col-md-6">
+        <img src={'https://i.imgur.com/1NLiQLO.png'} alt="Where is the logo???" className="img-responsive-HolaCodeYB"/>
       </div>
-      <div className="col-md-0">
+      <div id="contentWithinBlueWallpaper" className="col-md-3">
       </div>
-  </section>
-</div>
+    </div>
+</section>
 );
 
 export default HolaCode;
