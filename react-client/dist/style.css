@@ -226,7 +226,7 @@ border-bottom-left-radius: 25px;
   height: 100%;
   width: 100%;
   margin-top: 125px;
-  margin-bottom: 100%;
+  margin-bottom: 0%;
 }
 
 .img-responsive-HolaCodeCH1{
@@ -235,6 +235,40 @@ border-bottom-left-radius: 25px;
   margin-top: 0px;
   margin-bottom: 0%;
 }
+
+#fondoHomeCH1{
+  background-color: lightblue;
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*Here is where the modify the profiles page*/
+.Cohort-logo-section{
+  height: 30px;
+   width: 100%;
+   padding-top: 0%;
+   padding-bottom: 0px;
+   text-align: center;
+ }
+ #logo{
+   width: 80%;
+   margin-top: 0px;
+   height: 200px;
+ }
+
+ #contentWithinBlueWallpaperProfile{
+  height: 100%;
+  width: 100%;
+  margin-top: 125px;
+  margin-bottom: 0%;
+}
+
+.img-responsive-HolaCodeProfile{
+  height: 80%;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0%;
+}
+
 
 #fondoHomeCH1{
   background-color: lightblue;

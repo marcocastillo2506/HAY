@@ -9,7 +9,7 @@ import StudentList from "../components/cohort/StudentList.jsx";
 import ImageCollections from "../components/cohort/ImageCollections.jsx";
 
 const CohortLayout = (props) => (
-      <div id='fondoCohort'>
+      <div>
         <HeaderBar />
         <div>
           <HolaCoHort/>
