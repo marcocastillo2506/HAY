@@ -2,6 +2,8 @@ import React from 'react';
 
 import HeaderBar from "../components/home/HeaderBar.jsx";
 import HolaAboutMe from "../components/profile/HolaAboutMe.jsx";
+import PerfilCard from "../components/profile/PictureComponent.jsx";
+
 
 export default class Profile extends React.Component {
   constructor(props) {
@@ -34,13 +36,36 @@ export default class Profile extends React.Component {
         <HeaderBar />
         <div>
           <HolaAboutMe />
-          <div style={{color: "black"}}>
-            <img className="profile-picture" src={`https://i.imgur.com/${this.state.profile.picture_path}.jpg`}/>
-            <div>{`${this.state.profile.first_name} ${this.state.profile.last_name}`}</div>
-            <div>{"View GitHub Profile: " + `https://github.com/${this.state.profile.github_link}`}</div>
-            <div>{this.state.profile.about_me}</div>
-          </div>
+          <div id='fondoPerfil'>
+          <br/>
+            <br/>
+              <br/>
+            <section className="LaDeArriba-section">
+              <div className="row">
+                <div className="col-md-3">
+                </div>
+                <div id='ProfileCard' className="col-md-6">
+                  <div id="card2" className="card">
+                    <div className="Nicolas-Card" style={{width: "18rem"}}>
+                      <img className="card-img-top-Nicolas" src={`https://i.imgur.com/${this.state.profile.picture_path}.jpg`}/>
+                        <div className="card-body">
+                        <h4 className="card-title">{`${this.state.profile.first_name} ${this.state.profile.last_name}`}</h4>
+                        <h6>Mentor</h6>
+                        <p className="card-text">{"View GitHub Profile: " + `https://github.com/${this.state.profile.github_link}`}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                </div>
+              </div>
+            </section>
+            <br/>
+              <br/>
+          <div>
         </div>
+        </div>
+      </div>
       </div>
     )
   }
