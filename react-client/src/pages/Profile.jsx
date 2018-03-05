@@ -36,9 +36,9 @@ export default class Profile extends React.Component {
         <HeaderBar />
         <div>
           <HolaAboutMe />
+          <div id='fondoPerfil'>
           <br/>
             <br/>
-              <br/>
               <br/>
             <section className="LaDeArriba-section">
               <div className="row">
@@ -60,10 +60,12 @@ export default class Profile extends React.Component {
                 </div>
               </div>
             </section>
-
+            <br/>
+              <br/>
           <div>
         </div>
         </div>
+      </div>
       </div>
     )
   }
