@@ -18,7 +18,7 @@ const HomeGallery = (props) => (
                     School of Business, France.</p>
                   <br/>
                   <br/>
-              <a href="https://www.starbucks.com/" className="btn btn-primary">What do I do?</a>
+              <a href="https://www.starbucks.com/" className="btn btn-primary">Lets get a coffee!</a>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ const HomeGallery = (props) => (
                 the only country she knew as home. After overcoming many obstacles thanks to the help of many, she
                 has been able to empower herself through education. Through her life experience and education, she
                 wants to help empower her community of Poch@s coming back to Mexico.</p>
-              <a href="https://www.holacode.com" className="btn btn-primary">What do I do?</a>
+              <a href="https://www.holacode.com" className="btn btn-primary">Get to know more about the program!</a>
             </div>
           </div>
         </div>
