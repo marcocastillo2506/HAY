@@ -13,6 +13,8 @@ app.use(express.static(__dirname + "/../react-client/dist"));
 //GET request routes
 app.get("/home", route.getQuotes)
 
+app.get("/home-pics", route.getGallery)
+
 app.get("/cohort", route.getCohortMembers)
 
 app.get('/profile/:id', route.renderProfile)

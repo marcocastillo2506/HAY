@@ -109,3 +109,58 @@ INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_
 VALUES ("Garima", "Batra", "mentor", 1, "gbatra17", "G15GtFa", "I love coding, rock-climbing, exploring new countries and languages. HolaCode has been a one of a kind experience and I can't wait to see where all the students take this adventure!");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me)
 VALUES ("Jason", "Stieber", "mentor", 1, "theenderweggin", "rV0kWU9", "Jason Stieber has been working in education for over 10 years working with students from diverse backgrounds. As a Hack Reactor graduate, he knows what is needed to transform motivated students into software engineers. He has managed small to mid-sized teams and is experienced in training many students from zero to proficiency. Before becoming an engineer, Jason worked for two major American Fortune 500 companies in the medical device space and is well versed in the soft skills of the corporate world.");
+
+
+
+
+
+
+CREATE TABLE images (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  pic_path varchar(55),
+  title varchar(55)
+);
+
+INSERT INTO images (pic_path, title) VALUES ("1vTPBl9", "Creator Awards");
+INSERT INTO images (pic_path, title) VALUES ("49Ge8o3", "Marcela Creator Awards");
+INSERT INTO images (pic_path, title) VALUES ("VznF0v6", "Everyone Beginnin");
+INSERT INTO images (pic_path, title) VALUES ("BfCpdzt", "Julio Out-of-Space Instrument");
+INSERT INTO images (pic_path, title) VALUES ("YOoBrCT", "Garima Lecturing");
+INSERT INTO images (pic_path, title) VALUES ("2KleaSJ", "Thanksgiving Pie");
+INSERT INTO images (pic_path, title) VALUES ("HVMIYwC", "Everyone Second Hacknight");
+INSERT INTO images (pic_path, title) VALUES ("BPZ2Hx6", "Moving Out Day");
+INSERT INTO images (pic_path, title) VALUES ("e3BWwIx", "Jack´s Birthday");
+INSERT INTO images (pic_path, title) VALUES ("SMjMG8P", "Dia de Reyes");
+INSERT INTO images (pic_path, title) VALUES ("DwdCzwH", "Protesta");
+INSERT INTO images (pic_path, title) VALUES ("4Masktd", "Valentine´s");
+INSERT INTO images (pic_path, title) VALUES ("Ob2SOAX", "First Official Meet Up");
+INSERT INTO images (pic_path, title) VALUES ("Gwhycqg", "Second Social Hack Night");
+INSERT INTO images (pic_path, title) VALUES ("vzR22gk", "Scott Helping Out");
+INSERT INTO images (pic_path, title) VALUES ("vzR22gk", "Chef Lalo Motivational Speech");
+INSERT INTO images (pic_path, title) VALUES ("bmvWvII", "Len´s Birthday");
+INSERT INTO images (pic_path, title) VALUES ("vOWjQOO", "Holacode Proudly Represented");
+INSERT INTO images (pic_path, title) VALUES ("p6Le5Ey", "¿A Quien le toco el muñeco?");
+INSERT INTO images (pic_path, title) VALUES ("QTUIhsB", "Garima on Office Hour");
+INSERT INTO images (pic_path, title) VALUES ("v9WDLi8", "Temporally Office During Protesta");
+INSERT INTO images (pic_path, title) VALUES ("j0GAyf2", "Yoga Class");
+INSERT INTO images (pic_path, title) VALUES ("spUsBjM", "Jason Lecturing");
+INSERT INTO images (pic_path, title) VALUES ("QXkqdpb", "Yoga Class Second Shot");
+INSERT INTO images (pic_path, title) VALUES ("oKlsG1i", "A Ellas les Toco la Protesta");
+INSERT INTO images (pic_path, title) VALUES ("ZNJDBuh", "Pijama Day");
+INSERT INTO images (pic_path, title) VALUES ("aSOymMP", "Nicholas Moving Out Day");
+INSERT INTO images (pic_path, title) VALUES ("hsZ9CpZ", "Possible Hiring Partners Dinner Time");
+INSERT INTO images (pic_path, title) VALUES ("XaPElX3", "Thanksgiving Different Shot");
+INSERT INTO images (pic_path, title) VALUES ("Mx0gaB2", "Creator Awards at Metrobus");
+INSERT INTO images (pic_path, title) VALUES ("48NnHnf", "Christmas Dinner");
+INSERT INTO images (pic_path, title) VALUES ("e5Vm7Xo", "Creator Awards at Market");
+INSERT INTO images (pic_path, title) VALUES ("gMA9nGk", "Creator Awards Ceremony");
+INSERT INTO images (pic_path, title) VALUES ("CLJHOpV", "Christmas Dinner With Ohter People");
+INSERT INTO images (pic_path, title) VALUES ("q6NSx6n", "WeWork Security Guards?");
+INSERT INTO images (pic_path, title) VALUES ("cNQJn3H", "Possible Hiring Partners Dinner Rest of the Crew");
+INSERT INTO images (pic_path, title) VALUES ("jvX4e5v", "Los Guapos de la Generacion?");
+INSERT INTO images (pic_path, title) VALUES ("Ole9yNz", "Everyone Pre-Immersive");
+INSERT INTO images (pic_path, title) VALUES ("jKfisWD", "Live Debbuggin");
+INSERT INTO images (pic_path, title) VALUES ("niey1Nq", "Be My Valentine´s?");
+INSERT INTO images (pic_path, title) VALUES ("H2GBDo5", "Already My Valentines");
+INSERT INTO images (pic_path, title) VALUES ("7I7zcgP", "First Visitors/Possible Hiring Partners?");
+INSERT INTO images (pic_path, title) VALUES ("zubo3gG", "Abi´s Birthday");

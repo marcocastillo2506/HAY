@@ -40,6 +40,11 @@ From within the root directory:
 npm install
 ```
 
+## Unfinished Components
+
+On Slideshow Component, there is a function that will get all images from our images table. This component renders and function works properly. However, the purpose for This component was to show a slideshow instead of showing all images in disorder way. We
+tried to use React-Slideshow-imaga, the libaray did not crash the app, but the slideshow was never created. Attempted to use another libray which was more complete and recently updated, however, it did crash the app and couldn´t find the bug given. 
+
 ## Contributing
 
 See [CONTRIBUTING.md](https://github.com/unexpected-lion/ourglass/blob/master/contributing.md) for contribution guidelines.

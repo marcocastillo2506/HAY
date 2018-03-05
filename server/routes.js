@@ -32,3 +32,14 @@ exports.renderProfile = function(req, res) {
     })
     .catch(err => {console.log(err) })
   }
+
+  //Query dB for gallery
+exports.getGallery = (req, res) => {
+    Promise.all([
+      db.getGallery()
+    ])
+      .then(data => {
+        res.status(200).send(data)
+      })
+      .catch(err => { console.log(err) })
+  }

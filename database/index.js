@@ -47,9 +47,21 @@ const getSingleProfile = function(profId) {
   })
 };
 
+const getGallery = function() {
+  return new Promise((resolve, reject) => {
+    connection.query('SELECT * FROM images', (err, data) => {
+      if (err) {
+        return reject(err);
+      }
+    return resolve(data);
+    })
+  })
+};
+
 module.exports = {
   getHomeQuotes,
   getCohortStudents,
   getCohortMentors,
-  getSingleProfile
+  getSingleProfile,
+  getGallery
 };
