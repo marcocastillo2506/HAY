@@ -73,9 +73,6 @@
 
 /***********************/
 
-
-/*beautify random quotes in GetSingleQuote.jsx*/
-
 /*background pic for Cohorts.jsx*/
 #fondoCohort{
    background-color: white;);
@@ -83,7 +80,7 @@
 /*background pic for Home.jsx*/
 #fondoBannerMatrix{
   width: 100%;
-  height: 375px;
+  height: 300px;
   background-image: url("https://i.imgur.com/8IbWFkl.jpg");
 }
 #fondoHome{
@@ -176,6 +173,7 @@ border-bottom-left-radius: 25px;
 /*This is to modify the paper in all the cards in home.jsx*/
 .card{
   width: 389px;
+  border-color: pink;
 }
 .card-img-top-Marcela{
   width: 287px;
