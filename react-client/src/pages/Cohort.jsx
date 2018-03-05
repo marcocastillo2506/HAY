@@ -41,7 +41,7 @@ export default class Cohort extends React.Component {
     return(
       <div className="cohort-sublayout">
         <HeaderBar />
-        <div className="cohort-content">
+        <div id='fondoBannerMatrix' className="cohort-content">
           {console.log(this.props.match.path)}
           <Switch>
             <Route exact path={this.props.match.path}

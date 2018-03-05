@@ -11,7 +11,6 @@
    margin-top: 0px;
    height: 250px;
  }
- /*This is where the modification of the logo row ends*/
 
 #contentWithinBlueWallpaper{
   height: 100%;
@@ -27,6 +26,7 @@
   margin-bottom: 0%;
 }
 
+/*This is where the modification of the logo row ends*/
 
 /*This is where the 1st row can be modified, where the quotes are rendering
  and the card to the left and right of the quotes in the home page*/
@@ -84,7 +84,7 @@
   background-image: url("https://i.imgur.com/8IbWFkl.jpg");
 }
 #fondoHome{
-  background-color: white;
+  background-color: black;
 }
 /*This is where you can modify the tab all the way the top of the home page*/
 #appBar{
@@ -208,3 +208,34 @@ border-bottom-left-radius: 25px;
   padding-left: 50px;
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*This is for the Cohort page*/
+.Cohort-logo-section{
+  height: 30px;
+   width: 100%;
+   padding-top: 0%;
+   padding-bottom: 0px;
+   text-align: center;
+ }
+ #logo{
+   width: 80%;
+   margin-top: 0px;
+   height: 200px;
+ }
+
+ #contentWithinBlueWallpaperCH1{
+  height: 100%;
+  width: 100%;
+  margin-top: 125px;
+  margin-bottom: 100%;
+}
+
+.img-responsive-HolaCodeCH1{
+  height: 80%;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0%;
+}
+
+#fondoHomeCH1{
+  background-color: lightblue;
+}
