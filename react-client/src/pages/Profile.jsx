@@ -1,5 +1,8 @@
 import React from 'react';
 
+import HeaderBar from "../components/home/HeaderBar.jsx";
+import HolaAboutMe from "../components/profile/HolaAboutMe.jsx";
+
 export default class Profile extends React.Component {
   constructor(props) {
     super(props);
@@ -28,11 +31,15 @@ export default class Profile extends React.Component {
   render() {
     return (
       <div>
-        <div style={{color: "black"}}>
-          <img className="profile-picture" src={`https://i.imgur.com/${this.state.profile.picture_path}.jpg`}/>
-          <div>{`${this.state.profile.first_name} ${this.state.profile.last_name}`}</div>
-          <div>{"View GitHub Profile: " + `https://github.com/${this.state.profile.github_link}`}</div>
-          <div>{this.state.profile.about_me}</div>
+        <HeaderBar />
+        <div>
+          <HolaAboutMe />
+          <div style={{color: "black"}}>
+            <img className="profile-picture" src={`https://i.imgur.com/${this.state.profile.picture_path}.jpg`}/>
+            <div>{`${this.state.profile.first_name} ${this.state.profile.last_name}`}</div>
+            <div>{"View GitHub Profile: " + `https://github.com/${this.state.profile.github_link}`}</div>
+            <div>{this.state.profile.about_me}</div>
+          </div>
         </div>
       </div>
     )
