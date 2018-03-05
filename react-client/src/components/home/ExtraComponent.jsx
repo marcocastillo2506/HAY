@@ -14,7 +14,7 @@ const ExtraComponent = (props) => (
               <p className="card-text">Aida is a specialist in migration and advocacy for migrant communities,
                 refugees and displaced populations. She has nine years of experience in managing and implementing
                 migrant assistance through public policy.</p>
-              <a href="http://www.gq.com.mx/bon-vivant/articulos/los-mejors-mercados-y-bazares-de-la-cdmx/6609" className="btn btn-primary">What do I do?</a>
+              <a href="http://www.gq.com.mx/bon-vivant/articulos/los-mejors-mercados-y-bazares-de-la-cdmx/6609" className="btn btn-primary">We should visit one of these places today!</a>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ const ExtraComponent = (props) => (
               <h4 className="card-title">Lic Camilo Torres</h4>
                 <h6>Official Stress Handler</h6>
               <p className="card-text">Woof woof woof, gimme food!</p>
-              <a href="https://www.petco.com.mx/PromocionesMes?gclid=CjwKCAiAz-7UBRBAEiwAVrz-9bTfY6rvnQF7a_C333c-_sw6j36S6b8VTVrdnnVouH7XY-Jv4sItwBoCJ6UQAvD_BwE" className="btn btn-primary">What do I do?</a>
+              <a href="https://www.petco.com.mx/PromocionesMes?gclid=CjwKCAiAz-7UBRBAEiwAVrz-9bTfY6rvnQF7a_C333c-_sw6j36S6b8VTVrdnnVouH7XY-Jv4sItwBoCJ6UQAvD_BwE" className="btn btn-primary">Get me toys here!</a>
             </div>
           </div>
         </div>

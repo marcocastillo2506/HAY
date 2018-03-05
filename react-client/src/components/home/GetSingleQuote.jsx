@@ -53,7 +53,7 @@ export default class GetSingleQuote extends React.Component {
                      sector, social corporate responsibility to become an international consultant for social impact
                      assessments and action-field-researcher across the world. She believes HolaCode has the potential
                      to hack obstacles youth might encounter to achieve their dreams.</p>
-                  <a href="http://www.material-ui.com/#/" className="btn btn-primary">What do I do?</a>
+                   <a href="http://www.material-ui.com/#/" className="btn btn-primary">Learn about Material-UI!</a>
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default class GetSingleQuote extends React.Component {
                      for 7 years in investment banking in London and Paris at BNP Paribas, and set up an accelerator
                      program for social entrepreneurs in Mexico for LGT Venture Philanthropy. Nicolas loves spending
                      time with his family, playing flamenco guitar, training capoeira and traveling.</p>
-                  <a href="https://getbootstrap.com/" className="btn btn-primary">What do I do?</a>
+                   <a href="https://getbootstrap.com/" className="btn btn-primary">Learn about Bootstrap!</a>
                 </div>
               </div>
             </div>
