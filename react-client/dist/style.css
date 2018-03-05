@@ -1,30 +1,44 @@
 /*This is where the logo row can be modified*/
- .logo-section{
+.logo-section{
+  height: 3px;
    width: 100%;
    padding-top: 0%;
-   padding-bottom: 0%;
+   padding-bottom: 0px;
    text-align: center;
  }
  #logo{
-   margin-top: 30px;
+   width: 80%;
+   margin-top: 0px;
    height: 250px;
  }
- /*111Modifies only the quotes rendering in the home page*/
+ /*This is where the modification of the logo row ends*/
 
+#contentWithinBlueWallpaper{
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100%;
+}
 
-/*This is where the modification of the ````logo```` row ends*/
+.img-responsive-HolaCodeYB{
+  height: 70%;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0%;
+}
+
 
 /*This is where the 1st row can be modified, where the quotes are rendering
  and the card to the left and right of the quotes in the home page*/
  .top-section{
-   width: 100%;
+   width: 100%
    padding-top: 0%;
    padding-bottom: 0%;
    text-align: center;
  }
  /*Modifies only the quotes rendering in the home page*/
 #QuotesInTheCenter{
-  color: black;
+  color: green;
   font-style: italic;
   font-size: 35px;
 }
@@ -54,35 +68,22 @@
   /*This is where the modification of the 3rd row ends*/
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*this is where the properties for all the cards can be changed and as for now it is in the home page*/
- #card{
-   color: red;
-   outline: 50px ridge green;
- }
+
 /*This is where the modification for cards ends*/
 
 /***********************/
 
-/* This is for the banner in the home page HolaCode.jsx, you can modify it's position here*/
-.banner{
-width: 85%;
-height: 100%;
-  position: relative;
-}
-/*beautify random quotes in GetSingleQuote.jsx*/
-
 /*background pic for Cohorts.jsx*/
 #fondoCohort{
-   background-image: url("https://i.pinimg.com/originals/4f/6d/05/4f6d052bb1b26150115888ea06d4c106.jpg");
+   background-color: white;);
 }
 /*background pic for Home.jsx*/
-#fondoBanner{
-  margin-top: 63px;
+#fondoBannerMatrix{
   width: 100%;
-  height: 275px;
-   background-image: url("https://i.imgur.com/8IbWFkl.jpg");
+  height: 300px;
+  background-image: url("https://i.imgur.com/8IbWFkl.jpg");
 }
 #fondoHome{
-  background-size: auto;
   background-color: white;
 }
 /*This is where you can modify the tab all the way the top of the home page*/
@@ -90,7 +91,7 @@ height: 100%;
   background-color: #48D1CC;
   position: fixed,sticky;
   width: 100%;
-  margin-right: 0px;
+  height: 60px;
 }
 #tabButtonHome{
   color: #6495ED;
@@ -171,8 +172,8 @@ border-bottom-left-radius: 25px;
 }
 /*This is to modify the paper in all the cards in home.jsx*/
 .card{
-  background-color: #FFF8DC;
-  width: 289px;
+  width: 389px;
+  border-color: pink;
 }
 .card-img-top-Marcela{
   width: 287px;
@@ -203,36 +204,7 @@ border-bottom-left-radius: 25px;
   width: 287px;
   height: 290px;
 }
-.card-img-top-Cas{
-  width: 293px;
-  height: 350px;
-}
-
 .card3{
   padding-left: 50px;
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}

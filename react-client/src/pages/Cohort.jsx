@@ -3,6 +3,7 @@ import React from 'react';
 
 import { Switch, Route, Link } from 'react-router-dom';
 
+import HeaderBar from "../components/home/HeaderBar.jsx";
 import Profile from "./Profile.jsx"
 import CohortLayout from "./CohortLayout.jsx"
 
@@ -39,6 +40,7 @@ export default class Cohort extends React.Component {
   render(){
     return(
       <div className="cohort-sublayout">
+        <HeaderBar />
         <div className="cohort-content">
           {console.log(this.props.match.path)}
           <Switch>

@@ -10,10 +10,8 @@ import HeaderBar from "./components/home/HeaderBar.jsx";
 const PrimaryLayout = ({ match }) => (
   <div className="primary-layout">
     <div>
-      <HeaderBar />
     </div>
     <div>
-      <HolaCode />
     </div>
     <main>
       <Switch>
