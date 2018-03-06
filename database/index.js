@@ -1,3 +1,7 @@
+/*
+Using mysql2 as the mysql module because it supports promises.
+All the dB queries are written as promises.
+*/
 const mysql = require('mysql2');
 const mysqlConfig = require('./config.js');
 

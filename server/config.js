@@ -17,6 +17,7 @@ app.get("/home-pics", route.getGallery)
 
 app.get("/cohort", route.getCohortMembers)
 
-app.get('/profile/:id', route.renderProfile)
+//GET profile/:id is not used
+//app.get('/profile/:id', route.renderProfile)
 
 module.exports = app;

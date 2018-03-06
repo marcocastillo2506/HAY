@@ -11,7 +11,8 @@ exports.getQuotes = (req, res) => {
   }
 
 //Query dB for students & mentors
-
+//Promise.all allows promisified mysql queries to run concurrently
+//Promise.all takes promisified functions, runs them asynchronously, returns array of results
 exports.getCohortMembers = (req, res) => {
   Promise.all([
     db.getCohortMentors(),
@@ -23,7 +24,7 @@ exports.getCohortMembers = (req, res) => {
     .catch(err => { console.log(err) })
 }
 
-//Query dB for single student
+//Query dB for single student: Not used in app, can be re-purposed
 exports.renderProfile = function(req, res) {
   let profId = req.url.params.id;
   db.getSingleProfile(profId)
