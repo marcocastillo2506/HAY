@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/JorgeC0218/HAY.png?columns=all)](https://waffle.io/JorgeC0218/HAY?utm_source=badge)
 # Greenfield: HOLACODE ALUMNI YEARBOOK
 
 > A collection of memories from the 1st HolaCode Cohort
