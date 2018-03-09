@@ -1,6 +1,10 @@
 import React from "react";
 import $ from "jquery";
 
+const style = {
+  backgroundColor: 'black'
+}
+
 export default class GetSingleQuote extends React.Component {
   constructor(props) {
     super(props);
@@ -42,7 +46,7 @@ export default class GetSingleQuote extends React.Component {
       <section className="top-section">
         <div className="row">
           <div className="col-md-3">
-            <div className="card">
+            <div className="card" style={style}>
               <div className="Marcelas-Card" style={{width: "18rem"}}>
                 <img className="card-img-top-Marcela" src="https://i.imgur.com/llYZAD1.jpg?1" alt="Marcela's Pro Pic"/>
                 <div className="card-body">
@@ -67,7 +71,7 @@ export default class GetSingleQuote extends React.Component {
             {this.state.quote}
           </div>
           <div className="col-md-3">
-            <div id="card2" className="card">
+            <div id="card2" className="card" style={style}>
               <div className="Nicolas-Card" style={{width: "18rem"}}>
                 <img className="card-img-top-Nicolas" src="https://i.imgur.com/9vDSVUE.jpg?2" alt="Nicolas's Pro Pic"/>
                 <div className="card-body">

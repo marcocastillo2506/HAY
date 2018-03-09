@@ -1,11 +1,16 @@
 import React from "react";
+import GallCarousel from "./Slideshow.jsx";
+
+const style = {
+  backgroundColor: 'black'
+}
 
 const HomeGallery = (props) => (
 
   <section className="second-section">
     <div className="row">
       <div className="col-md-3">
-        <div className="card">
+        <div className="card" style={style}>
           <div className="Diana's-Card" style={{width: "18rem"}}>
             <img className="card-img-top-Diana" src="https://i.imgur.com/uLhnphg.jpg?1" alt="Diana's Pro Pic"/>
             <div className="card-body">
@@ -24,15 +29,10 @@ const HomeGallery = (props) => (
         </div>
       </div>
       <div id='GalleryInTheCenter' className="col-md-6">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-          <h3>"Gallery's render part goes in here"</h3>
+         <GallCarousel />
       </div>
       <div className="col-md-3">
-        <div id="card2" className="card">
+        <div id="card2" className="card" style={style}>
           <div className="Leni's-Card" style={{width: "18rem"}}>
             <img className="card-img-top-Leni" src="https://i.imgur.com/G9E7Fv3.jpg?1" alt="Leni's Pro Pic"/>
             <div className="card-body">
@@ -43,7 +43,7 @@ const HomeGallery = (props) => (
                 the only country she knew as home. After overcoming many obstacles thanks to the help of many, she
                 has been able to empower herself through education. Through her life experience and education, she
                 wants to help empower her community of Poch@s coming back to Mexico.</p>
-              <a href="https://www.holacode.com" className="btn btn-primary">Get to know more about the program!</a>
+              <a href="https://www.holacode.com" className="btn btn-primary">know more about HolaCode!</a>
             </div>
           </div>
         </div>

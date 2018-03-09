@@ -1,7 +1,10 @@
-body{
-  background-color: '#000000';
-}
 /*This is where the logo row can be modified*/
+body {
+  max-width: 100%;
+}
+html {
+  max-width: 100%;
+}
 .logo-section{
   height: 3px;
    width: 100%;
@@ -39,16 +42,16 @@ body{
 /*This is where the 1st row can be modified, where the quotes are rendering
  and the card to the left and right of the quotes in the home page*/
  .top-section{
-   width: 100%
+   width: 100%;
    padding-top: 0%;
    padding-bottom: 0%;
    text-align: center;
  }
  /*Modifies only the quotes rendering in the home page*/
 #QuotesInTheCenter{
-  color: #000000;
+  color: white;
   font-style: italic;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 /*This is where the modification of the 1st row end*/
@@ -92,14 +95,14 @@ body{
   height: 300px;
   background-image: url("https://i.imgur.com/xDVkRwC.jpg");
 }
-
 #fondoHome{
-  background-color: white;
+  background-color: black;
 }
 /*This is where you can modify the tab all the way the top of the home page*/
 #appBar{
   background-color: #000000;
-  position: fixed,sticky;
+  position: absolute;
+  left: 0px;
   width: 100%;
   height: 60px;
 }
@@ -182,49 +185,43 @@ border-bottom-left-radius: 25px;
 }
 /*This is to modify the paper in all the cards in home.jsx*/
 .card{
-  width: 389px;
+  color: white;
+  width: 280px;
   border-color: pink;
-  background-color: ''#000000;
 }
 .card-img-top-Marcela{
-  background-color: #000000;
   width: 287px;
   height: 290px;
-  margin-left: 40px;
 }
 .card-img-top-Aida{
   width: 287px;
   height: 350px;
-  margin-left: 40px;
 }
 .card-img-top-Diana{
   width: 287px;
   height: 350px;
-  margin-left: 40px;
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*This makes the cards on the right column align with the right border*/
 #card2{
   position: fixed;
-  margin-left: 30px;
+  max-width: 100%;
 }
 .card-img-top-Nicolas{
-  width: 287px;
+  width: 260px;
   height: 290px;
-  margin-left: 30px;
 }
 .card-img-top-Leni{
-  width: 290px;
+  width: 260px;
   height: 350px;
-    margin-left: 30px;
 }
 .card-img-top-Cas{
-  width: 287px;
+  width: 260px;
   height: 290px;
-    margin-left: 30px;
 }
 .card3{
-  padding-left: 70px;
+  padding-left: 0px;
+  color: white;
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*This is for the Cohort page*/
@@ -256,14 +253,14 @@ border-bottom-left-radius: 25px;
 }
 
 #fondoHomeCH1{
-  background-color: Black;
+  background-color: lightblue;
 }
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*Here is where the modify the profiles page*/
 .Profile-logo-section{
   height: 10px;
-   width: 110%;
+   width: 100%;
    padding-top: 0%;
    padding-bottom: 0px;
    text-align: center;
