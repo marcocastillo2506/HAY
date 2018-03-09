@@ -12,6 +12,7 @@ import Toolbar from 'material-ui/Toolbar';
           <Toolbar>
             <Link to="/"><Button id='tabButtonHome'>Home</Button></Link>
             <Link to="/cohort"><Button id='tabButtonCohort' label="Cohort" color="inherit">Cohort</Button></Link>
+              <Link to="/videos"><Button id='tabButtonCohort' label="Videos" color="inherit">Videos</Button></Link>
           </Toolbar>
       </AppBar>
     </div>
