@@ -1,11 +1,16 @@
 import React from "react";
 
+
+const style = {
+  backgroundColor: 'black'
+}
+
 const ExtraComponent = (props) => (
 
   <section className="third-section">
     <div className="row">
       <div className="col-md-3">
-        <div className="card">
+        <div className="card" style={style}>
           <div className="Aida's-Card" style={{width: "18rem"}}>
             <img className="card-img-top-Aida" src="https://i.imgur.com/Wq6Ucne.jpg" alt="Aida's Pro Pic"/>
             <div className="card-body">
@@ -14,7 +19,7 @@ const ExtraComponent = (props) => (
               <p className="card-text">Aida is a specialist in migration and advocacy for migrant communities,
                 refugees and displaced populations. She has nine years of experience in managing and implementing
                 migrant assistance through public policy.</p>
-              <a href="http://www.gq.com.mx/bon-vivant/articulos/los-mejors-mercados-y-bazares-de-la-cdmx/6609" className="btn btn-primary">We should visit one of these places today!</a>
+              <a href="http://www.gq.com.mx/bon-vivant/articulos/los-mejors-mercados-y-bazares-de-la-cdmx/6609" className="btn btn-primary">visit these places today!</a>
             </div>
           </div>
         </div>
@@ -37,7 +42,7 @@ const ExtraComponent = (props) => (
       <div className="col-md-1">
       </div>
       <div className="col-md-3">
-        <div id="card2" className="card">
+        <div id="card2" className="card" style={style}>
           <div className="Nicola's-Card" style={{width: "18rem"}}>
             <img className="card-img-top-Cas" src="https://i.imgur.com/wwzpAUA.jpg?1" alt="Cas's Pro Pic"/>
             <div className="card-body">
