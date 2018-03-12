@@ -63,13 +63,13 @@ export default class GetSingleQuote extends React.Component {
             </div>
           </div>
           <div id='QuotesInTheCenter' className="col-md-6">
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            {this.state.quote}
-          </div>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           {this.state.quote}
+         </div>
           <div className="col-md-3">
             <div id="card2" className="card" style={style}>
               <div className="Nicolas-Card" style={{width: "18rem"}}>
