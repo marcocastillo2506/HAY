@@ -15,8 +15,8 @@ const PrimaryLayout = ({ match }) => (
     </div>
     <main>
       <Switch>
-        <Route exact path={`${match.path}`} component={Home} />
-        <Route path={`${match.url}cohort`} component={Cohort} />
+        <Route exact path={`${match.path}`} component={Home}/>
+        <Route path={`${match.path}cohort`} component={Cohort}/>
       </Switch>
     </main>
   </div>

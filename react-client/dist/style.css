@@ -289,11 +289,23 @@ border-bottom-left-radius: 25px;
   background-color: lightblue;
 }
 #fondoPerfil{
-   background-image: url('https://i.imgur.com/fK72Vko.jpg');
+   background-image: url('https://i.imgur.com/S09V2I7.jpg');
+   width: 12 00px;
+   height: 700px;
 }
 #ProfileCard{
   padding-left: 175px;
 }
 #card5{
   margin-right: -50px;
+}
+
+#lettersWithIn{
+  color: black;
+}
+#picPro{
+  width: 280px;
+}
+#picPro{
+  backgroundColor: 'transparent';
 }

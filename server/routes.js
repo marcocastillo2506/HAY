@@ -44,3 +44,13 @@ exports.getGallery = (req, res) => {
       })
       .catch(err => { console.log(err) })
   }
+  //Query dB for videos
+  exports.getVideos = (req, res) => {
+      Promise.all([
+        db.getVideos()
+      ])
+        .then(data => {
+          res.status(200).send(data)
+        })
+        .catch(err => { console.log(err) })
+    }
