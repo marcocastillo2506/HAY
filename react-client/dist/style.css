@@ -5,6 +5,8 @@ body {
 html {
   max-width: 100%;
 }
+
+}​
 .logo-section{
   height: 3px;
    width: 100%;
@@ -120,12 +122,13 @@ in the COHORT in cohort.jsx*/
   box-shadow: 10px 8px 30px #fff;
   margin: 25px 25px 25px 25px;
   background-color: #92a8d1;
-  border: 8px groove orange;
+  border: 8px groove White;
   border-top-left-radius: 25px;
 border-top-right-radius: 25px;
 border-bottom-right-radius: 25px;
 border-bottom-left-radius: 25px;
 }
+
 #teachersFN{
   color: white;
   font-style: italic;
@@ -181,8 +184,19 @@ border-bottom-left-radius: 25px;
 
 .profile-picture {
   height: 100px;
-  width: 100px
+  width: 100px;
+  animation: fadein 6s;
 }
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
 /*This is to modify the paper in all the cards in home.jsx*/
 .card{
   color: white;
@@ -206,6 +220,7 @@ border-bottom-left-radius: 25px;
 #card2{
   position: fixed;
   max-width: 100%;
+  padding-left: 50px;
 }
 .card-img-top-Nicolas{
   width: 260px;
@@ -220,8 +235,17 @@ border-bottom-left-radius: 25px;
   height: 290px;
 }
 .card3{
-  padding-left: 0px;
+  padding-left: 50px;
   color: white;
+
+}
+#card4{
+  position: fixed;
+  max-width: 100%;
+}
+.card-img-top-center{
+  width: 560px;
+  height: 590px;
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*This is for the Cohort page*/
@@ -253,7 +277,7 @@ border-bottom-left-radius: 25px;
 }
 
 #fondoHomeCH1{
-  background-color: lightblue;
+  background-color: black;
 }
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -286,7 +310,7 @@ border-bottom-left-radius: 25px;
 }
 
 #fondoHomeCH1{
-  background-color: lightblue;
+  background-color: black;
 }
 #fondoPerfil{
    background-image: url('https://i.imgur.com/S09V2I7.jpg');
@@ -296,6 +320,19 @@ border-bottom-left-radius: 25px;
 #ProfileCard{
   padding-left: 175px;
 }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#card5 {
+  animation: fadein 6s;
+}
+
 #card5{
   margin-right: -50px;
 }
