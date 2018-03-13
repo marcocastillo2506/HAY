@@ -1,3 +1,4 @@
+<<<<<<< current
 import React from "react";
 import GallCarousel from "./Slideshow.jsx";
 
@@ -56,3 +57,20 @@ const HomeGallery = (props) => (
 )
 
 export default HomeGallery;
+=======
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Carousel } from 'react-responsive-carousel';
+
+ class GallCarousel extends Component {
+    render() {
+        return (
+            <Carousel>
+                
+            </Carousel>
+        );
+    }
+};
+
+export default GallCarousel;
+>>>>>>> before discard
